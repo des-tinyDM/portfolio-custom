@@ -1,0 +1,77 @@
+.Resume {
+  &Container {
+    // height: 160vh;
+    margin: 5vh 0;
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+      padding: 0 4vw;
+    }
+  }
+
+  &__Download {
+    margin: 0 0;
+    width: 100%;
+    // height: 5vh;
+
+    & button {
+      padding: 1vh 2vw;
+      border-radius: 3px;
+      background: white;
+      // font-size: 14px;
+    }
+  }
+  &__Section {
+    // height: 70vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+    // &--Work {
+    //   width: 100%;
+    // }
+    // &--Education {
+    //   width: 30%;
+    // }
+  }
+}
+.JobCard {
+  &__Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: start;
+
+    & h4 {
+      margin: 0;
+    }
+  }
+  &__Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    align-self: flex-start;
+
+    & h4 {
+      width: 90%;
+    }
+    & h5 {
+      width: 90%;
+    }
+  }
+
+  &__Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+
+    height: 100%;
+  }
+}

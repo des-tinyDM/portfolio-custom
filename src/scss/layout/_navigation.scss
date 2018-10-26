@@ -1,0 +1,52 @@
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15vw;
+  height: 100vh;
+  background: $color-background-dark;
+  color: white;
+  position: fixed;
+  z-index: 100;
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    width: $nav-width;
+  }
+
+  &__ImgContainer {
+    height: 200px;
+    margin: 10vh auto;
+
+    & img {
+      max-width: 150px;
+      border-radius: 50%;
+    }
+    & h3 {
+      color: $color-primary;
+    }
+  }
+
+  &__ScrollLinkBox {
+    margin-bottom: 10vh;
+    @media only screen and (min-device-height: 820px) {
+      margin-top: 15vh;
+      margin-bottom: 40vh;
+    }
+
+    a {
+      text-decoration: none !important;
+      color: white;
+      &.active {
+        color: $color-primary;
+        text-decoration: none;
+      }
+      &.inview {
+        text-decoration: none;
+        color: $color-primary-dark;
+      }
+      &:visited {
+        text-decoration: none;
+      }
+    }
+  }
+}
